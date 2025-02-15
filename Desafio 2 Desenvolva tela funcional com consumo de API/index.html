@@ -48,68 +48,124 @@
     <!-- Seção change -->
     <div class="change">
       <div class="change-item">
-        <h1>Descubra Mais com Precisão: <br />Previsões do Tempo e endereços<br />em tempo real.</h1>  
-        <img src="assects/sol.svg" alt="" />
-    </div> 
-
-    <!-- Seção de formulario -->
-    <div class="cpd-form-itens">
-      <form class="cpd-form"action="https://formspree.io/f/xdkazzyr"method="post">
-        <p class="form-super">
-          <label>Primeiro nome:</label><br /><br />
-          <input class="form-super-int" placeholder="Insira seu primeiro nome:" type="text" required name="nome"/>
-        </p>
-
-        <p class="form-super">
-          <label>E-mail:</label><br /><br />
-          <input class="form-super-int"
-            placeholder="Insira seu e-mail" type="text" required name="email"/> 
-        </p>
-
-        <p class="form-super">
-          <label>Digite o CEP:</label><br /><br />
-          <input class="form-super-int" placeholder="Insira o CEP" type="text" required name="cep" />
-        </p>
-
-        <p>
-            <label>Digite a latitude e longitude para saber a previsão:</label
-            ><br /><br />
-            <input class="form-inf" placeholder="Latitude" type="text" required name="latitude" />
-            <input class="form-inf" placeholder="Longitude" type="text" required name="longitude" />
-        </p>
-
-        <button class="login-button" type="submit">Acessar</button>
-      </form>
+        <h1>
+          Descubra Mais com Precisão: <br />Previsões do Tempo e endereços<br />em
+          tempo real.
+        </h1>
+        <img id="img" src="assects/sol.svg" alt="" />
+      </div>
     </div>
 
-    <!-- <div class="third">
-        <div>
-          <h1>Resultado da busca por CEP:</h1>
-          <img src="assects/loc.svg" alt="" />
-        </div>
-        <div class="resultado-cep">
+    <!-- Seção de formulario -->
+    <div id="formulario">
+      <section>
+        <form id="form" action="https://formspree.io/f/xdkazzyr" method="post">
+          <fieldset>
+            <div class="container-fist">
+              <label for="name">Primeiro Nome:</label>
+              <input
+                placeholder="Insira seu primeiro nome:"
+                type="text"
+                required
+                name="name"
+                autofocus
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="container-fist">
+              <label for="email">E-mail:</label>
+              <input
+                placeholder="Insira seu e-mail"
+                type="email"
+                required
+                name="email"
+                autofocus
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="container-fist">
+              <label for="cep">Digite o CEP:</label>
+              <input
+                placeholder="Insira o CEP"
+                type="cep"
+                required
+                name="cep"
+                autofocus
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="label">
+              <label for="name"
+                >Digite a latitude e longitude para saber a previsão:</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="container-second">
+              <input
+                placeholder="Latitude"
+                type="text"
+                required
+                name="latitude"
+                autofocus
+              />
+              <input
+                placeholder="Longitude"
+                type="text"
+                required
+                name="longitude"
+                autofocus
+              />
+            </div>
+          </fieldset>
+
+          <button class="login-button" type="submit">Acessar</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Seção de busca -->
+    <div class="previsao">
+      <div id="busca-cep">
+        <h1>Resultado da busca por CEP:</h1>
+        <img class="img-loc" src="assects/loc.svg" alt="" />
+      </div>
+      <div id="resultado">
+        <div id="resultado-cep">
           <p>Logradouro/nome</p>
           <p>Bairro/Distrito</p>
           <p>Localidade/UF</p>
         </div>
-        <div class="resultado-tempo">
+        <div id="resultado-tempo">
           <p>Justino Cobra</p>
           <p>Vila Ema</p>
           <p>SP</p>
         </div>
       </div>
-      <div>
+    </div>
+
+    <!-- Seção de previsão -->
+    <div class="previsao">
+      <div id="res-prev">
         <h1>Previsão do tempo na região:</h1>
-        <img src="assects/nuvem.svg" alt="" />
-        <div>
-          <p>Previsão de tempo de acordo com a região: 24° C</p>
-        </div>
+        <img class="img-loc" src="assects/nuvem.svg" alt="" />
+      </div>
+      <div id="preve">
+        <p>Previsão de tempo de acordo com a região: 24° C</p>
       </div>
     </div>
+
     <footer class="footer">
       <p>Termos de Uso | Política de Privacidade</p>
-    </footer> -->
+    </footer>
 
-    <!-- <script src="assects/index.js"></script> -->
+    <script src="assects/index.js"></script>
   </body>
 </html>
